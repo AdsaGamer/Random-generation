@@ -52,7 +52,7 @@ while True:
         #pygame.mixer.music.load("maintheme.mp3")
         #pygame.mixer.music.play(loops=-1)
         while True:
-            clock.tick(60)
+            clock.tick(24)
             mouse=pygame.mouse.get_pos()
             mousex=mouse[0]
             mousey=mouse[1]
@@ -120,7 +120,6 @@ while True:
             screen.blit(char, (xx,y))
             screen.blit(mouseimg, (mousex-50, mousey-50))
             pygame.display.update()
-            print()
     else:
         break
         pygame.display.update()
